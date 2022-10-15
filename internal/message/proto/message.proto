@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package messageService;
+option go_package = ".;messageService";
+
+message Message {
+    string body = 2;
+}
+
+message MessageRequest {
+    string to = 1;
+    string body = 2;
+}
+
+message MessageResponse {
+    string from = 1;
+    string body = 2;
+}
+
+
+service MessageService {
+    rpc SendMessage(MessageRequest) returns (MessageResponse) {}
+}
