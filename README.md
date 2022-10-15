@@ -1,4 +1,4 @@
-### Very simple microservice using GO, gRPC
+### Very simple microservice using GO, gRPC, Kafka
 
 #### Run with make
 
